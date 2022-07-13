@@ -51,6 +51,11 @@ persist.vendor.camera3.pipeline.bufnum.min.low_ram.rsso=6
 persist.vendor.camera3.pipeline.bufnum.base.rsso=5
 persist.vendor.camera3.pipeline.bufnum.min.high_ram.fdyuv=5
 persist.vendor.camera3.pipeline.bufnum.min.low_ram.fdyuv=5
+# App launch prefetching (IORapd)
+ro.iorapd.enable=false
+iorapd.perfetto.enable=false
+iorapd.readahead.enable=false
+persist.device_config.runtime_native_boot.iorap_readahead_enable=false
 ro.vendor.mediatek.version.branch=alps-mp-r0.mp1.tc8sp2
 ro.vendor.mediatek.version.release=alps-mp-r0.mp1.tc8sp2-V2.1.1_huaqin.r0mp1.k69v1.64_P12
 persist.radio.multisim.config=dsds
