@@ -51,11 +51,6 @@ persist.vendor.camera3.pipeline.bufnum.min.low_ram.rsso=6
 persist.vendor.camera3.pipeline.bufnum.base.rsso=5
 persist.vendor.camera3.pipeline.bufnum.min.high_ram.fdyuv=5
 persist.vendor.camera3.pipeline.bufnum.min.low_ram.fdyuv=5
-# App launch prefetching (IORapd)
-ro.iorapd.enable=false
-iorapd.perfetto.enable=false
-iorapd.readahead.enable=false
-persist.device_config.runtime_native_boot.iorap_readahead_enable=false
 ro.vendor.mediatek.version.branch=alps-mp-r0.mp1.tc8sp2
 ro.vendor.mediatek.version.release=alps-mp-r0.mp1.tc8sp2-V2.1.1_huaqin.r0mp1.k69v1.64_P12
 persist.radio.multisim.config=dsds
@@ -430,6 +425,7 @@ ro.vendor.se.type=HCE,UICC
 ro.vendor.mtk_uicc_clf=1
 ro.vendor.colorpick_adjust=true
 ro.vendor.cabc.enable=true
+debug.hwui.renderer=skiagl
 config.svi.path=/system/etc/SVIConfig.xml
 debug.svi.logs=1
 debug.als.logs=1
@@ -444,5 +440,6 @@ persist.dbg.volte_avail_ovr=1
 persist.dbg.vt_avail_ovr=1
 persist.dbg.wfc_avail_ovr=1
 debug.renderengine.backend=skiaglthreaded
+renderthread.skia.reduceopstasksplitting=true
 ro.config.vc_call_vol_steps=7
 import /vendor/build_${ro.boot.radio.multisim.config}_vendor.prop
